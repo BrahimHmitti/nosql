@@ -1,0 +1,21 @@
+# Render Blueprint Configuration
+# https://render.com/docs/blueprint-spec
+
+services:
+  - type: web
+    name: nosql-corruption-detector
+    runtime: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn app:app --bind 0.0.0.0:$PORT
+    envVars:
+      - key: GOOGLE_API_KEY
+        sync: false
+      - key: MONGO_URI
+        sync: false
+      - key: DB_NAME
+        value: corruption_db
+      - key: COLLECTION_NAME
+        value: analyses
+      - key: PYTHONUNBUFFERED
+        value: "1"
+    healthCheckPath: /health
