@@ -50,6 +50,34 @@ docker compose up --build
 
 Ce projet est destiné à des fins éducatives uniquement. Nous ne sommes pas responsables si vous découvrez que votre maire se fait livrer des lingots d'or par drone.
 
+### 🚀 Déploiement en Ligne
+
+Cette application peut être déployée gratuitement sur plusieurs plateformes:
+
+| Plateforme | Difficulté | Temps |
+|------------|-----------|-------|
+| **Render** ⭐ | Facile | 5 min |
+| **Vercel** | Facile | 5 min |
+| **Railway** | Moyen | 10 min |
+
+**Pour plus de détails, consultez [DEPLOYMENT_OPTIONS.md](./DEPLOYMENT_OPTIONS.md)**
+
+#### Déploiement Rapide sur Render
+
+1. Créez un compte sur [render.com](https://render.com)
+2. Cliquez sur "New +" > "Web Service"
+3. Connectez votre dépôt GitHub
+4. Configurez les variables d'environnement:
+   - `GOOGLE_API_KEY`
+   - `MONGO_URI`
+   - `DB_NAME`
+   - `COLLECTION_NAME`
+5. Cliquez sur "Create Web Service"
+
+### 📊 Autres Dépôts - Options de Déploiement
+
+Consultez [DEPLOYMENT_OPTIONS.md](./DEPLOYMENT_OPTIONS.md) pour voir les options de déploiement de tous les dépôts de BrahimHmitti.
+
 ### 🤝 Contribution
 
 Les PRs sont les bienvenues! Ensemble, luttons contre la corruption avec humour et technologie.
